@@ -228,12 +228,6 @@ class SolutionTest(unittest.TestCase):
 
     # @unittest.skip("kalau mau test yg uncompressed aja")
     def test_toy_set(self):
-        # toy test set for debugging
-        # points = random.sample(range(10000, 1000000), 100000)
-        # segments = random.sample(points, 9000)
-
-        # segments = [(i, random.sample(points, 1)[0]) for i in segments]
-        # segments = [i for i in segments if i[0] > i[1]]
         segments = []
         segments.extend(
             [
@@ -261,7 +255,7 @@ class SolutionTest(unittest.TestCase):
             1, segmentTree.stab_query(10000), "output for 10000 should be: 1"
         )
 
-    @unittest.skip("kalau mau test yg compressed aja")
+    # @unittest.skip("kalau mau test yg compressed aja")
     def test_toy_set_uncompressed(self):
         segments = []
         segments.extend(
@@ -305,5 +299,4 @@ class SolutionTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-
     unittest.main()
